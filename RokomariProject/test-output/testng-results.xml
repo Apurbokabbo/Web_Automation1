@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-09T23:04:57 BDT" name="Default suite" finished-at="2023-04-09T23:05:43 BDT" duration-ms="45326">
+  <suite started-at="2023-04-10T20:00:03 BDT" name="Default suite" finished-at="2023-04-10T20:01:12 BDT" duration-ms="68903">
     <groups>
     </groups>
-    <test started-at="2023-04-09T23:04:57 BDT" name="Default test" finished-at="2023-04-09T23:05:43 BDT" duration-ms="45326">
-      <class name="testcases.CartPageTeseCase">
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.CartPageTeseCase@5bf0fe62]" started-at="2023-04-09T23:04:50 BDT" name="setBrowser" finished-at="2023-04-09T23:04:57 BDT" duration-ms="6713" status="PASS">
+    <test started-at="2023-04-10T20:00:03 BDT" name="Default test" finished-at="2023-04-10T20:01:12 BDT" duration-ms="68903">
+      <class name="testcases.ShippingPageTeseCase">
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.ShippingPageTeseCase@4b23c30a]" started-at="2023-04-10T19:59:58 BDT" name="setBrowser" finished-at="2023-04-10T20:00:03 BDT" duration-ms="5046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method signature="clickOnPlaceOrder()[pri:0, instance:testcases.CartPageTeseCase@5bf0fe62]" started-at="2023-04-09T23:04:57 BDT" name="clickOnPlaceOrder" finished-at="2023-04-09T23:05:42 BDT" duration-ms="45129" status="PASS">
+        <test-method signature="shippingPageDataFillUp()[pri:0, instance:testcases.ShippingPageTeseCase@4b23c30a]" started-at="2023-04-10T20:00:03 BDT" name="shippingPageDataFillUp" finished-at="2023-04-10T20:01:12 BDT" duration-ms="68693" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnPlaceOrder -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testcases.CartPageTeseCase@5bf0fe62]" started-at="2023-04-09T23:05:43 BDT" name="quitBrowser" finished-at="2023-04-09T23:05:44 BDT" duration-ms="1901" status="PASS">
+        </test-method> <!-- shippingPageDataFillUp -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testcases.ShippingPageTeseCase@4b23c30a]" started-at="2023-04-10T20:01:12 BDT" name="quitBrowser" finished-at="2023-04-10T20:01:14 BDT" duration-ms="2020" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- testcases.CartPageTeseCase -->
+      </class> <!-- testcases.ShippingPageTeseCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

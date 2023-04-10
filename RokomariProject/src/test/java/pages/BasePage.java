@@ -2,14 +2,19 @@ package pages;
 
 import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
 import static utilities.BaseDriver.getDriver;
 
 public class BasePage {
 	
-	public  WebElement getElement(By locator) {
+	
+
+	public WebElement getElement(By locator) {
 
 		return getDriver().findElement(locator);
 	}
@@ -93,6 +98,46 @@ public class BasePage {
 
 		getDriver().navigate().to(url);
 
+	}
+
+	public void scrollingDownTillElementfound(By locator) {
+
+		JavascriptExecutor js = (JavascriptExecutor) getDriver();
+		js.executeScript("arguments[0].scrollIntoView();", getElement(locator));
+
+	}
+
+	public void closeBanner(By locator) {
+		try {
+			clickOn(locator);
+
+		} 
+		catch (Exception e) {
+			System.out.println("Banner not found!");
+		}
+
+	}
+	
+	public void scrollHorizontally(By locator) {
+		JavascriptExecutor js = (JavascriptExecutor) getDriver();
+		js.executeScript("arguments[0].scrollIntoView();", getElement(locator));
+	
+	}
+	
+	public void scrollUp() {
+		JavascriptExecutor js = (JavascriptExecutor) getDriver();
+		js.executeScript("window.scrollBy(0,-350)", "");	
+	}
+	
+	public void scrolldown() {
+		JavascriptExecutor js = (JavascriptExecutor) getDriver();
+		js.executeScript("window.scrollBy(0,350)", "");	
+	}
+	
+	public void selectValueFromDropUsingText(By locator , String text) throws InterruptedException {
+		Select select = new Select(getElement(locator));
+		select.selectByVisibleText(text);
+		Thread.sleep(1000);
 	}
 
 }

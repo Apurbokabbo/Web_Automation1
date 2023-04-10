@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="testcases.HumayunBookListingPageTestCase">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="paginationPreviousPage"/>
+          <include name="filteringMultiple"/>
+          <include name="filtering"/>
+          <include name="setBrowser"/>
+          <include name="filteringReset"/>
+          <include name="filterSearch"/>
+          <include name="filtering2"/>
+          <include name="languageSelect"/>
+        </methods>
+      </class> <!-- testcases.HumayunBookListingPageTestCase -->
+      <class name="testcases.LoginTestCase">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="setBrowser"/>
+          <include name="loginWithValidMailWrongPW"/>
+          <include name="loginwithValidPhoneInfo"/>
+          <include name="loginWithoutAnyData"/>
+        </methods>
+      </class> <!-- testcases.LoginTestCase -->
+      <class name="testcases.LandingPageTestCase">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="setBrowser"/>
+          <include name="hoverWriter"/>
+          <include name="writerListingSeeMoreButtonClick"/>
+          <include name="selectWriter"/>
+        </methods>
+      </class> <!-- testcases.LandingPageTestCase -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

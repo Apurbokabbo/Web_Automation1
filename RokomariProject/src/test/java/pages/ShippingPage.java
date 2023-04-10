@@ -12,6 +12,8 @@ public class ShippingPage extends BasePage{
 	public String alternativePhone = "01533323130";
 	public String address = "East Medda , House 345/46 ,Word :2 Brahmambaria Sadar";
 	public String phone = "01543424140";
+	public String areaText = "ব্রাহ্মণবাড়িয়া সদর";
+	public String zoneText ="ধরখার ইউনিয়ন";
 	
 	
 	
@@ -23,7 +25,7 @@ public class ShippingPage extends BasePage{
 	public By cityLocator = By.xpath("//select[@id='js--city']");
 	public By cityDropDownValueSelect = By.xpath("//option[contains(text(),'ব্রাহ্মণবাড়িয়া')]");
 	public By areaLocator = By.xpath("//select[@id='js--area']");
-	public By areaDropDownValueSelect = By.xpath("//option[contains(text(),'ব্রাহ্মণবাড়িয়া সদর')]");
+	public By areaDropDownValueSelect = By.xpath("//option[contains(text(),'ব্রাহ্মণবাড়িয়া সদর')]]");
 	public By zoneLocator = By.xpath("//select[@id='js--zone']");
 	public By zoneDropDownValueSelect = By.xpath("//option[contains(text(),'ব্রাহ্মণবাড়িয়া পৌরসভা')]");
 	public By addressField = By.xpath("//body/div[@id='shipping-payment']/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/div[2]/fieldset[2]/textarea[1]");
